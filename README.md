@@ -1,2 +1,2 @@
-# genetic-algorithm-project
- Genetic Algorithm based Gamma Radiation Detector
+# Genetic Algorithm based Gamma Radiation Detector
+ 
