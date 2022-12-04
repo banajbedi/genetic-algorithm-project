@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Dec  3 21:21:44 2022
+@author: Banaj Bedi
 
-@author: Banaj
 """
 
 import numpy as np
