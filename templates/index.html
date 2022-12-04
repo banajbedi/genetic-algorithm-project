@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}" />
+  <!-- Making it compatible to mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Gamma-Detect-inator</title>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1 class="heading">GAMMA - DETECT - inator</h1>
+
+    <form action="{{ url_for('predict')}}" method="post">
+    	<input type="text" name="fLength" placeholder="Major Axis of Ellipse [mm]" required="required" />
+      <input type="text" name="fWidth" placeholder="Minor Axis of Ellipse [mm]" required="required" /><br><br>
+      <input type="text" name="fSize" placeholder="10-log of sum of content of all pixels" required="required" />
+      <input type="text" name="fConc" placeholder="Ratio of sum of two highest pixels over fSize" required="required" /><br><br>
+      <input type="text" name="fConc1" placeholder="Ratio of highest pixel over fSize" required="required" />
+      <input type="text" name="fAsym" placeholder="Distance from highest pixel to center" required="required" /><br><br>
+      <input type="text" name="fM3Long" placeholder="3rd root of third moment along major axis [mm]" required="required" />
+      <input type="text" name="fM3Trans" placeholder="3rd root of third moment along minor axis [mm]" required="required" /><br><br>
+      <input type="text" name="fAlpha" placeholder="angle of major axis with vector to origin [deg]" required="required" />
+      <input type="text" name="fDist" placeholder="distance from origin to center of ellipse [mm]" required="required" /><br><br>
+      <p>
+      <button class="button" type="submit">Predict if it is Gamma!</button>
+      </p>
+    </form>
+
+   <br>
+   <br>
+   <h4 class="result"> <span> {{ prediction_text }} </span> </h4>
+
+ </div>
+
+
+</body>
+</html>
