@@ -1,5 +1,7 @@
 # Genetic Algorithm based Gamma Radiation Detector
  
+Try out @ http://banaj7.pythonanywhere.com/  
+  
 Dataset Link : https://archive.ics.uci.edu/ml/datasets/MAGIC+Gamma+Telescope  
 The model classifies whether or not some energy is either Gamma Radiation or Hadron Radiation.  
 
