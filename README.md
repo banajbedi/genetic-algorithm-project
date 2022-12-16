@@ -15,7 +15,9 @@ The model classifies whether or not some energy is either Gamma Radiation or Had
  * numpy
  * scikit-learn
  * tpot
-
+  
+**Best pipeline:**
+  
 ![image](https://user-images.githubusercontent.com/83486603/208032632-922b3030-d132-4e00-9f0a-ae16e4f4d5f5.png)  
 Best Accuracy : 0.8475289  
 
